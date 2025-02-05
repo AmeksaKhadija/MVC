@@ -8,7 +8,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $users =new User('firstname','lastname');
+        $users =new User('ameksa','khadija');
         $this->render('index', ['users' => $users]);
     }
 }

@@ -1,11 +1,11 @@
 <?php
-include "APP/Core/Database.php";
+include 'app/Core/Database.php';
 
 try {
 
     Database::getInstance()->connect();
 
-    echo 'Connection to the PostgreSQL database sever has been established successfully.';
+    echo 'hello world!';
 } catch (PDOException $e) {
 
     echo $e->getMessage();
